@@ -3,7 +3,7 @@
     <div class="flex items-center justify-between">
       <div id="logo">
         <img
-          src="/src/assets/Images/tattoo-adda-logo.svg"
+          src="/src/assets/default/tattoo-adda-logo.svg"
           alt="logo"
           class="max-w-36 max-16"
         />
