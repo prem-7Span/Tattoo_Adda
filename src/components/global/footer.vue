@@ -1,8 +1,8 @@
 <template>
-  <div id="main-parent">
+  <div id="main-parent" class="container my-10">
     <div
       id="main-container"
-      class="flex items-start justify-between max-w-full px-20 py-20 bg-transparent border-2 border-blue-800 rounded-3xl"
+      class="flex flex-col items-start justify-between max-w-full px-10 py-10 bg-transparent border-2 border-blue-800 sm:flex-row rounded-3xl"
     >
       <div class="space-y-3 max-w-72">
         <p class="py-4 text-2xl font-bold">Locate Us</p>

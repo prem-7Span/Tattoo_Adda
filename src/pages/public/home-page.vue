@@ -1,23 +1,28 @@
 <template>
-  <!-- Banner -->
-  <homeBanner />
+  <div class="container">
+    <!-- Banner -->
+    <homeBanner />
 
-  <!-- personal-offer-section-->
-  <OfferSection />
+    <!-- personal-offer-section-->
+    <OfferSection />
 
-  <!-- minimal-tattoo-design -->
-  <MinimalDesigns />
+    <!-- minimal-tattoo-design -->
+    <MinimalDesigns />
 
-  <!-- gallery / best work -->
-  <bestWork />
+    <!-- gallery / best work -->
+    <bestWork />
 
-  <!-- About us/ Our artists -->
-  <Artists />
+    <!-- About us/ Our artists -->
+    <information />
 
-  <!-- About us/ Our artists -->
-  <Information />
+    <!-- About us/ Our artists -->
+    <Artists />
 
-  <!-- Testimonials/Review -->
+    <!-- Testimonials/Review -->
+
+    <!-- faq -->
+    <faq />
+  </div>
 </template>
 
 <script>
@@ -31,6 +36,7 @@ import bestWork from "./best-work.vue";
 import homeBanner from "./home-banner.vue";
 import Artists from "./artists.vue";
 import information from "./information.vue";
+import faq from "./faq.vue";
 
 export default defineComponent({
   name: "WrapAround",
@@ -44,6 +50,7 @@ export default defineComponent({
     homeBanner,
     information,
     Artists,
+    faq,
   },
 });
 </script>

@@ -1,17 +1,20 @@
 <template>
-  <div class="flex justify-center">
+  <div class="items-center text-center">
+    <p class="text-3xl">Steps To Get Perfect Tattoo</p>
+  </div>
+  <div class="flex justify-between my-10">
     <div class="flex flex-col md:flex-row">
       <div
         v-for="(step, index) in steps"
         :key="index"
         class="mx-4 mb-8 md:mb-0"
       >
-        <div class="w-64 p-6 bg-white rounded-lg shadow-lg">
-          <h3 class="mb-2 text-xl font-bold">{{ step.title }}</h3>
-          <p class="mb-4 text-gray-700">{{ step.description }}</p>
-          <button
-            class="px-4 py-2 font-bold text-white bg-blue-500 rounded hover:bg-blue-700"
-          >
+        <div
+          class="flex flex-col items-center justify-center w-full p-6 py-10 bg-white border-2 border-blue-800 rounded-lg shadow-lg"
+        >
+          <h3 class="mb-4 text-xl font-bold text-center">{{ step.title }}</h3>
+          <p class="mb-12 text-center text-gray-700">{{ step.description }}</p>
+          <button class="px-8 py-3 mx-auto border-2 border-blue-800">
             {{ step.buttonText }}
           </button>
         </div>
@@ -27,22 +30,22 @@ export default {
   setup() {
     const steps = reactive([
       {
-        title: "Consultation from wherever you are",
+        title: "Global Consultation Services",
         description:
-          "Schedule your consultation from any part of the world, be it online or in-person.",
-        buttonText: "Book a free consultation",
+          "Experience the convenience of scheduling your personalized tattoo consultation from anywhere in the world. Choose between our seamless online video sessions or in-person meetings at our studio, tailored to your preference and location.",
+        buttonText: "Schedule Your Consultation",
       },
       {
-        title: "Custom designing your tattoo",
+        title: "Bespoke Tattoo Design Creation",
         description:
-          "After our detailed consultation, your custom tattoo design will be crafted with precision to perfection.",
-        buttonText: "Get a custom design",
+          "Following our comprehensive consultation, our skilled artists will meticulously craft your custom tattoo design. We iterate based on your feedback, ensuring every detail aligns perfectly with your vision and personal aesthetic.",
+        buttonText: "Get Your Custom Design",
       },
       {
-        title: "Get your tattoo design inked",
+        title: "Professional Tattoo Application",
         description:
-          "Your tattoo will be brought to life with state-of-the-art equipment and medical-grade hygiene protocols.",
-        buttonText: "Let get started",
+          "Bring your unique design to life in our state-of-the-art studio. Our expert artists use cutting-edge equipment and adhere to stringent medical-grade hygiene protocols, ensuring a safe, comfortable, and high-quality tattooing experience.",
+        buttonText: "Initiate Your Tattoo Journey",
       },
     ]);
 
