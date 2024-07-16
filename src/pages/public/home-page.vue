@@ -19,6 +19,7 @@
     <Artists />
 
     <!-- Testimonials/Review -->
+     <googleReviews/> 
 
     <!-- faq -->
     <faq />
@@ -36,6 +37,7 @@ import bestWork from "./best-work.vue";
 import homeBanner from "./home-banner.vue";
 import Artists from "./artists.vue";
 import information from "./information.vue";
+import googleReviews from "./googleReviews.vue"
 import faq from "./faq.vue";
 
 export default defineComponent({
@@ -50,6 +52,7 @@ export default defineComponent({
     homeBanner,
     information,
     Artists,
+    googleReviews,
     faq,
   },
 });
